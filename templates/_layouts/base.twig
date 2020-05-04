@@ -1,0 +1,44 @@
+{%- block htmlPage -%}
+<!doctype html>
+<html lang="{{ craft.app.language }}">
+<head>
+  <meta charset="utf-8">
+  <title>{% if title is defined %}{{ title }} — {% endif %}{{ siteName }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ siteUrl }}css/style.css">
+  
+  <link rel="dns-prefetch" href="{{ siteUrl }}">
+  <link rel="preconnect" href="{{ siteUrl }}" crossorigin>
+
+  {# -- Feeds -- #}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ siteUrl("/rss") }}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom" href="{{ siteUrl("/atom") }}" />
+  
+</head>
+
+
+<body {% if bodyClass is defined %}class="{{ bodyClass }}"{% endif %}>
+
+{% include "_partials/_header.twig" %}
+{% include "_partials/_nav.twig" %}
+
+{% block bodyContent %}
+
+{% endblock bodyContent %}
+
+</main>
+
+{% block footer %}
+{% include "_partials/_footer.twig" %}
+{% endblock footer %}      
+
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+{% endblock bodyJs %}
+
+
+</body>
+</html>
+{%- endblock htmlPage -%}

@@ -1,0 +1,18 @@
+# Craft CMS files
+/.env
+/.idea
+/vendor
+.DS_Store
+modules
+vendor
+storage
+config
+cpresources
+web/assets/
+
+# My files
+node_modules
+.config.codekit3
+config.codekit3
+.DS_Store
+

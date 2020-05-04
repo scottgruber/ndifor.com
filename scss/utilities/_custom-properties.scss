@@ -1,0 +1,146 @@
+// 300px     18.75em at 16px base font
+// 480px     30em
+// 600px     37.5em
+// 768px     48em
+// 992px 	   62em
+// 1024px    64em
+// 1220px    76.250em
+// 1382px	   86.375em
+// 1400px    87.5em
+
+// Google font Roboto Slab paired with Roboto
+// https://fonts.google.com/specimen/Roboto+Slab
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* CSS Custom Properties */
+
+:root {
+  // Typography 
+  --font-family: 'Roboto', sans-serif;;
+  --font-family-heading: 'Roboto Slab', serif;
+  --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
+    helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-family-mono: "Operator Mono SSm A", "Operator Mono SSm B", monospace;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500; 
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.25;
+  --line-height-text: 1.4;
+  --line-height-heading: 1;
+
+  --grid-compound-6-4: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+  --grid-compound-4-3: 3fr 1fr 2fr 2fr 3fr 1fr;
+  --grid-compound-5-4: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
+  --grid-column-gap: 2vw;
+  --grid-row-gap: 2vh;
+
+  /* Type scale 4:5 major third scale 1.25 */
+  --font-size-xx-display: 11.642rem;
+  --font-size-xx-display: 9.313rem;
+  --font-size-x-display: 5.96rem;
+  --font-size-display: 4.768rem;
+  --font-size-xxxx-large: 3.815rem;
+  --font-size-xxx-large: 3.052rem;
+  --font-size-xx-large: 2.441rem;
+  --font-size-x-large: 1.953rem;
+  --font-size-large: 1.563rem;
+  --font-size-medium: 1.25rem;
+  --font-size: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-x-small: 0.64rem;
+
+  --color-green: #007a5e;
+  --color-darker-green: #034e3c;
+  --color-lighter-green: #00c69a;
+  --color-red: #ce1227;
+  --color-darker-red: #b61021;
+  --color-lighter-red: #d65260;
+  --color-yellow: #fbce15;
+  --color-darker-yellow: #fe9c09;
+  --color-lighter--yellow: #fcfd0a;
+
+  --color-primary: var(--color-green);
+  --color-secondary: var(--color-red);
+  --color-accent-dark: var(--color-yellow);
+  
+  --color-neutral-lighter: #f5f0e9; 
+  --color-neutral-light: #e3d9ce;
+  --color-neutral: #aa9d8f;
+  --color-neutral-dark: #716050;
+  --color-neutral-darker: #4a3b2c;
+
+  --color-black: #333;
+  --color-white: #fff;
+
+  --color-text: var(--color-black);
+  --color-text-alt: var(--color-neutral-lighter);
+
+  /* Background colours
+// ========================================== */
+
+  --color-background: var(--color-neutral-lighter);
+
+  /* Border colours
+// ========================================== */
+
+  --color-border: var(--color-primary);
+  --color-border-separator: var(--color-accent);
+
+  /* Borders
+// ========================================== */
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 50%;
+  --border-width-hairline: 0.5px;
+  --border-width-thin: 1px;
+  --border-width-thick: var(--border-radius-medium);
+  --border-style-thin: var(--border-width-thin) solid var(--color-border);
+  --border-style-thick: var(--border-width-thick) solid var(--color-border);
+
+  /* Spacing
+// ========================================== */
+  --max-width: 90rem;
+  --spacing-xx-small: 0.25rem;
+  --spacing-x-small: 0.5rem;
+  --spacing-small: 0.75rem;
+  --spacing: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-x-large: 4rem;
+  --spacing-xx-large: 8rem;
+
+  /* Timing
+// ========================================== */
+
+  --duration-instantly: 0;
+  --duration-immediately: 0.05s;
+  --duration-quickly: 0.1s;
+  --duration-promptly: 0.2s;
+  --duration-slowly: 0.4s;
+  --timing: ease;
+
+  /* =viewport */
+  
+}
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+// 

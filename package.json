@@ -1,0 +1,30 @@
+{
+  "name": "ndifor.com",
+  "version": "1.0.0",
+  "description": "website handcrafted with care",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottgruber/ndifor.com.git"
+  },
+  "keywords": [
+    "craftcms",
+    "cameroon",
+    "indieweb"
+  ],
+  "author": "Scott Gruber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottgruber/ndifor.com/issues"
+  },
+  "homepage": "https://ndifor.com",
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.0.0"
+  }
+}
